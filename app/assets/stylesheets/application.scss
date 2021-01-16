@@ -54,20 +54,27 @@ a {
 	margin-bottom: 0.5rem;
 }
 
-.card-show {
-	height: 75vh;
-	object-fit: cover;
-}
-.card-body-show {
+.card-info-show {
+	height: 50vh;
 	position: relative;
-	// height: 100%;
+	// object-fit: cover;
 }
+
+.card-show img {
+	margin-bottom: 15px;
+}
+
+// .card-body-show {
+// 	position: relative;
+// 	height: 40vh;
+// }
 
 .show-price {
 	position: absolute;
 	top: 0;
 	left: 0;
 	font-size: 3rem;
+	margin-left: 40px;
 }
 
 .button .show {
@@ -76,7 +83,7 @@ a {
 
 .icon-wrapper-show {
 	position: absolute;
-	width: fit-content;
+	// width: fit-content;
 	top: 0;
 	right: 0;
 	display: flex;
@@ -84,6 +91,7 @@ a {
 
 .icon-text-show {
 	font-size: 3rem;
+	margin-right: 40px;
 }
 
 .header-link {

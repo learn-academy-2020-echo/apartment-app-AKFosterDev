@@ -31,7 +31,12 @@ class ApartmentShow extends Component {
 					<Row>
 						<Col>
 							<Card className='card-show'>
-								<CardImg top src={apartment.image} alt={apartment.street} />
+								<CardImg
+									// top
+									className='show'
+									src={apartment.image}
+									alt={apartment.street}
+								/>
 								<CardBody className='card-body-show'>
 									<div className='card-info-show'>
 										<CardTitle className='show-price' tag='h5'>
@@ -42,11 +47,18 @@ class ApartmentShow extends Component {
 												<BiBed className='icon show' /> {apartment.bedrooms}
 											</CardText>
 											<CardText className='icon-text-show'>
-												<BiBath className='icon' /> {apartment.bathrooms}
+												<BiBath className='icon show' /> {apartment.bathrooms}
 											</CardText>
 											<CardText className='icon-text-show'>
-												<IoPaw className='icon' /> {apartment.pets}
+												<IoPaw className='icon show' />{' '}
+												{apartment.pets.toUpperCase(1)}
 											</CardText>
+										</div>
+										<div className='show-details'>
+											<h3>
+												For more information please contact {apartment.manager}{' '}
+												at {apartment.email}
+											</h3>
 										</div>
 									</div>
 									<Link to='/apartmentindex'>
